@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorgen Wurtz VIII - Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="framework.css">
+    <link rel="stylesheet" media="screen" href="nav.css">
+    <link rel='stylesheet' media='screen' href='style.css'>
+    <script src="https://kit.fontawesome.com/091da124de.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark">
+    <header>
+        <nav>
+            <span class="logo">Jorgen Wurtz</span>
+            <span class="three-lines glyphicon glyphicon-menu-hamburger" onclick="showNav()"></span>
+            <ul id="ul-nav">
+                <li class="active"><a href="contact">Contact</a></li>
+                <li><a href="politics">Politics</a></li>
+                <li><a href="campaign">Campaign</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://formsubmit.co/shedeur999@gmail.com" id="contactform" method="POST">
+            <input type="hidden" name="_next" value="https://shedeurcoder.github.io/jorgen/sent">
+            <input type="hidden" name="_subject" value="Jorgen Wurtz Contact Form">
+            <input type="text" placeholder="Name" required name="name" id="name">
+            <input type="email" placeholder="Email" required name="email" id="email"> <br>
+            <textarea name="message" id="message" cols="30" required placeholder="Message"></textarea> <br>
+            <input type="submit" value="Submit Form" id="submit"> <br> 
+            Powered by FormSubmit
+        </form>
+    </main>
+</body>

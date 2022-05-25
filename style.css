@@ -1,0 +1,275 @@
+#slider {
+    overflow: hidden;
+}
+figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+figure img {
+    width: 20%;
+    float: left;
+}
+.intro {
+    margin: 5%;
+}
+.intro p {
+    padding: 1%;
+    font-size: 120%;
+}
+.jorgen-photo {
+    margin-top: 2%;
+    width: 100%;
+}
+.intro h2 {
+    padding: 2% 0;
+    color: black;
+    background: linear-gradient(to right, #00aaff, #00ff6c);
+    margin: 1%;
+    font-weight: bold;
+}
+.intro * {
+    border-radius: 10px;
+}
+.sec {
+    width: 100%;
+    color: gainsboro;
+    padding: 3%;
+}
+.politics {
+    background-color: darkslategrey;
+}
+.contact {
+    background-color: darkcyan;
+}
+.sec h2 {
+    font-weight: bolder;
+    font-size: 7rem;
+    margin-bottom: 1%;
+}
+.sec p {
+    font-size: 2.5rem;
+}
+.sec a {
+    font-size: 2rem;
+    color: #00aaff;
+}
+.contact h2 {
+    color: crimson;
+}
+.politics h2 {
+    color: cornflowerblue;
+}
+.fa-facebook {
+    color: #4267B2;
+}
+.fab {
+    cursor: pointer;
+}
+.fa-twitter {
+    color: #1DA1F2;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+.form {
+    margin-bottom: 3%;
+}
+footer form * {
+    border-radius: 5px;
+    padding: 1%;
+}
+footer form input {
+    background-color: dimgrey;
+    border: 0;
+    color: black;
+}
+footer form button {
+    background-color: dimgray;
+    color: black;
+    border: none;
+}
+footer a {
+    color: rgba(211, 211, 211, 0.7);
+    text-decoration: underline;
+}
+footer a:hover {
+    color: rgb(211, 211, 211);
+}
+#politics p {
+    font-size: 2rem;
+}
+#politics h1 {
+    font-size: 7rem;
+}
+#politics h2 {
+    font-size: 5rem;
+    margin-bottom: 3%;
+}
+.ps {
+    padding: 1%;
+}
+.view {
+    background-color:darkolivegreen;
+}
+.car {
+    background-color: darkslateblue;
+}
+.svg {
+    width: 10%;
+}
+#contact li {
+    font-size: 150%;
+    margin-block: 1%;
+}
+.leadtodirectcontactform {
+    background-color: #202124;
+    padding: 1%;
+    margin: 2%;
+    border: none;
+    font-size: 3rem;
+    color:rgba(211, 211, 211, 0.7)
+}
+.leadtodirectcontactform:hover {
+    color: rgb(211, 211, 211)
+}
+#contactform * {
+    background-color: dimgray;
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    padding: 1%;
+    margin-block: 0.5%;
+}
+#submit {
+    opacity: 0.8;
+}
+::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+#contactform {
+    text-align: center;
+    margin-top: 2%;
+    width: 100%;
+}
+.wwlogo {
+    font-size: 9rem;
+    text-align: center;
+    user-select: none;
+}
+.firstW, .secondW, .twentytwo {
+    display: inline-block;
+    margin-inline: -0.5%;
+}
+.twentytwo {
+    transform: translateY(50px);
+    color: gold;
+}
+.firstW {
+    transform: rotate(35deg);
+    color: #4267B2;
+}
+.secondW {
+    transform: rotate(-35deg);
+    color: rgb(204, 195, 121);
+}
+.ww {
+    font-size: 5rem;
+}
+#campaign {
+    margin: 1%;
+}
+#campaign h2 {
+    font-size: 5rem;
+}
+.pr-photos img {
+    width: 300px;
+}
+#campaign p {
+    font-size: 2.5rem;
+}
+@media only screen and (min-width: 650px) {
+    .pic-word::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .pic-word {
+        background: linear-gradient(to right, #00aaff, #00ff6c);
+        background-color: #00aaff;
+        padding-bottom: 1.5%;
+    }
+    .intro h2 {
+        background: none;
+        float: right;
+        overflow: visible;
+        width: 60%;
+        font-size: 8.4vw;
+    }
+    .jorgen-photo {
+        float: left;
+        height: 100%;
+        width: 35%;
+        margin-left: 2%;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .form {
+        float: left;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .pic-word::after {
+        display: block;
+        clear: none;
+        content: "Hi, I am Jorgen Wurtz.";
+        opacity: 0;
+    }
+    .pic-word {
+        padding: 0;
+    }
+    .intro h2 {
+        font-size: 5vw;
+    }
+    .jorgen-photo {
+        margin: 1%;
+    }
+    .sec {
+        padding: 7% 30% 7% 20%;
+    }
+    .ps {
+        padding: 5% 20% 5% 3%;
+    }
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%
+    }
+}
