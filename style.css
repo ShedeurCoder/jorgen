@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+:root {
+    --jorgen: #ffd700;
+    --wurtz: #4267b2;
+    --viii: #ccc379;
+    --nav-blue: rgb(39, 39, 80);
+}
+body {
+    color: white;
+    font-weight: 400;
+}
+p {
+    font-size: 1.3rem;
+}
+.jorgen-wurtz {
+    text-align: center;
+    font-size: 3rem;
+}
+.jorgen {
+    color: var(--jorgen);
+    font-weight: 500;
+}
+.wurtz {
+    color: var(--wurtz);
+    font-family: 'Roboto';
+}
+.viii {
+    color: var(--viii);
+    font-weight: 500;
+}
+.intro img {
+    width: 300px;
+    border-radius: 50%;
+    border: 10px var(--wurtz) solid;
+}
+.intro {
+    text-align: center;
+}
+.intro p {
+    padding-inline: 20px;
+    font-size: 1.1rem;
+}
+.nav-logo .j {
+    color: var(--jorgen);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.nav-logo .w {
+    color: var(--wurtz);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.card-header img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card {
+    width: 75%;
+    margin: 1ch auto;
+    background-color: var(--nav-blue);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+.card p {
+    padding-inline: 10px;
+}
+.read-more {
+    background-color: var(--jorgen);
+    width: fit-content;
+    padding: 0.75em;
+    color: black;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-center {
+    text-align: center;
+}
+footer {
+    background-color: black;
+    padding: 1.5em
+}
+.contact p {
+    font-size: 1rem;
+}
+.news-title {
+    font-size: 3rem;
+}
+section {
+    padding: 2rem 3rem;
+    color: #eaeaea;
+}
+section h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.anti-jorgen {
+    background-color: var(--nav-blue);
+}
+.career {
+    background-color: rgb(58, 50, 108);
+}
+legend {
+    font-size: 2rem;
+}
+fieldset {
+    border: 5px solid rgb(133, 132, 132);
+    padding: 10px;
+    margin: 10px;
+}
+.form-element {
+    font-size: 1.3rem;
+    text-align: left;
+    padding-inline: 20px;
+    margin-block: 10px;
+}
+.form-element input, .form-element label, .form-element textarea {
+    display: block;
+    width: 90%;
+    font-size: 1.3rem;
+}
+.form-element input, .form-element textarea {
+    border-radius: 10px;
+    padding: 5px;
+    border: solid black 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+}
+button[type='submit'], button[type='reset'] {
+    padding: 10px;
+    font-size: 1.3rem;
+    background-color: green;
+    color: white;
+    border: none;
+}
+button[type='reset'] {
+    background-color: #4267b2;
+}
+@media only screen and (min-width: 600px) {
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2em;
+        gap: 1em;
+    }
+} 
+@media only screen and (min-width: 800px) {
+    .jorgen-wurtz {
+        font-size: 5rem;
+    }
+    .news-title {
+        font-size: 3rem;
+    }
+    .nav-logo .j,
+    .nav-logo .w {
+        font-size: 3rem;
+    }
+    .card {
+        width: 90%;
+    }
+    section {
+        padding: 2rem 5rem;
+    }
+}
+@media only screen and (min-width: 1065px) {
+    .intro {
+        width: calc(300px + 85ch);
+        margin-inline: auto;
+    }
+    .intro img {
+        float: left;
+        margin-right: 4ch;
+    }
+    .intro p {
+        text-align: left;
+    }
+    .intro > div {
+        padding-block: 1ch;
+    }
+    .intro::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 2em;
+        gap: 1em;
+    }
+}

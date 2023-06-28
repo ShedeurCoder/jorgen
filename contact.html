@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorgen Wurtz</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-logo">
+            <button class="open-nav" onclick="toggleNav()" id="open-close"><i class="fas fa-bars"></i></button>
+            <span class="logo-nav"><a class="nav-link" href="/" id="logo"><span class="j">J</span><span class="w">W</span></a></span>
+        </div>
+        <div class="nav-links" id="links">
+            <a href="/" class="nav-link" style="--i: 1">Home</a>
+            <a href="/about" class="nav-link" style="--i: 2">About</a>
+            <a href="/contact" class="nav-link active" style="--i: 3">Contact</a>
+            <a href="https://twitter.com/jorgenwurtztl" class="nav-link" style="--i: 4"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+    <main>
+        <h1 class="text-center">Contact Wurtz</h1>
+        <div class="text-center">
+            <p>Email: office@jorgenwurtz.ta</p>
+            <p>Email: jw@progress.gov.ta</p>
+            <p>Phone: +69 (420) 405 - 5943</p>
+            <p>PO box: PO 4602 East Legoland City, Legoland</p>
+        </div>
+        <div class="text-center">
+            <form onsubmit="alert('Thank you for contacting us. We will get back to you.')">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <div class="form-element">
+                        <label for="name">Name:</label>
+                        <input type="text" placeholder="Name" id="name" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="number">Phone number (optional):</label>
+                        <input type="tel" placeholder="Phone number" id="number">
+                    </div>
+                    <div class="form-element">
+                        <label for="other">Message:</label>
+                        <textarea id="other" cols="30" rows="5" required></textarea>
+                    </div>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer class="text-center">
+        <div class="contact">
+            <h2>Contact me</h2>
+            <p>Email: office@jorgenwurtz.ta</p>
+            <p>Email: jw@progress.gov.ta</p>
+            <p>Phone: +69 (420) 405 - 5943</p>
+            <p>Twitter: @JorgenWurtzTL</p>
+        </div>
+        <p>&copy; Copyright Jorgen Wurtz 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
